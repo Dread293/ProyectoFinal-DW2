@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DX8RuNYiSMM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\59172\\Downloads\\backend diseño web 2\\backend\\backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\59172\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\59172\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
+    "C:\\Users\\59172\\.nuget\\packages\\scalar.aspnetcore\\2.18.2\\scalar.aspnetcore.2.18.2.nupkg.sha512"
+  ],
+  "logs": []
+}
