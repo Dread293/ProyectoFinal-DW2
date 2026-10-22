@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
+
+//inge falta diseñar los controladores
+
 namespace ProyectoFinal
 {
     [Route("[controller]")]
