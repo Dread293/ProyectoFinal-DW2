@@ -9,6 +9,8 @@ public partial class HistorialEstado
 
     public int PedidoId { get; set; }
 
+    public string Estado { get; set; } = null!;
+
     public string? NotaPublica { get; set; }
 
     public int? UsuarioId { get; set; }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yp4b0yCcAaE=",
+  "dgSpecHash": "UrHi1jGA8bw=",
   "success": true,
-  "projectFilePath": "C:\\codigos\\clone de backen (diseño web2)\\ProyectoFinal-DW2\\backend.csproj",
+  "projectFilePath": "C:\\backen-viza-desing tem\\ProyectoFinal-DW2\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -127,6 +127,9 @@ public partial class VizaDbContext : DbContext
             entity.ToTable("historial_estado");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(20)
+                .HasColumnName("estado");
             entity.Property(e => e.Fecha)
                 .HasDefaultValueSql("now()")
                 .HasColumnType("timestamp without time zone")
@@ -163,6 +166,9 @@ public partial class VizaDbContext : DbContext
             entity.Property(e => e.Orden)
                 .HasDefaultValue(0)
                 .HasColumnName("orden");
+            entity.Property(e => e.Tipo)
+                .HasMaxLength(10)
+                .HasColumnName("tipo");
             entity.Property(e => e.TrabajoId).HasColumnName("trabajo_id");
             entity.Property(e => e.Url)
                 .HasMaxLength(500)
@@ -183,6 +189,10 @@ public partial class VizaDbContext : DbContext
             entity.Property(e => e.CategoriaId).HasColumnName("categoria_id");
             entity.Property(e => e.ClienteId).HasColumnName("cliente_id");
             entity.Property(e => e.Descripcion).HasColumnName("descripcion");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(20)
+                .HasDefaultValueSql("'pendiente'::character varying")
+                .HasColumnName("estado");
             entity.Property(e => e.FechaEntregaEstimada).HasColumnName("fecha_entrega_estimada");
             entity.Property(e => e.FechaEntregaReal).HasColumnName("fecha_entrega_real");
             entity.Property(e => e.FechaRegistro)
@@ -211,6 +221,10 @@ public partial class VizaDbContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.ComentarioCliente).HasColumnName("comentario_cliente");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(20)
+                .HasDefaultValueSql("'pendiente'::character varying")
+                .HasColumnName("estado");
             entity.Property(e => e.Etiqueta)
                 .HasMaxLength(100)
                 .HasColumnName("etiqueta");

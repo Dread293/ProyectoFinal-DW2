@@ -9,6 +9,8 @@ public partial class MediaTrabajo
 
     public int TrabajoId { get; set; }
 
+    public string Tipo { get; set; } = null!;
+
     public string Url { get; set; } = null!;
 
     public string? MiniaturaUrl { get; set; }
