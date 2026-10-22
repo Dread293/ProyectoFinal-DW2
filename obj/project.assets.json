@@ -2660,11 +2660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\backen-viza-desing tem\\ProyectoFinal-DW2\\backend.csproj",
+      "projectUniqueName": "C:\\backend-viza-desing-tem\\ProyectoFinal-DW2\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\backen-viza-desing tem\\ProyectoFinal-DW2\\backend.csproj",
+      "projectPath": "C:\\backend-viza-desing-tem\\ProyectoFinal-DW2\\backend.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\backen-viza-desing tem\\ProyectoFinal-DW2\\obj\\",
+      "outputPath": "C:\\backend-viza-desing-tem\\ProyectoFinal-DW2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
