@@ -15,8 +15,6 @@ public partial class PropuestaDiseno
 
     public int? SubidoPor { get; set; }
 
-    public string Estado { get; set; } = null!;
-
     public string? ComentarioCliente { get; set; }
 
     public DateTime? FechaSubida { get; set; }

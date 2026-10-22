@@ -11,8 +11,6 @@ public partial class Pedido
 
     public string? Descripcion { get; set; }
 
-    public string Estado { get; set; } = null!;
-
     public DateTime? FechaRegistro { get; set; }
 
     public DateOnly? FechaEntregaEstimada { get; set; }
