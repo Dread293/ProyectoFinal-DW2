@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace backend.Models;
@@ -14,6 +14,8 @@ public partial class PropuestaDiseno
     public string ImagenUrl { get; set; } = null!;
 
     public int? SubidoPor { get; set; }
+
+    public string Estado { get; set; } = "pendiente";
 
     public string? ComentarioCliente { get; set; }
 

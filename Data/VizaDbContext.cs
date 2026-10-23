@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using backend.Models;
@@ -32,11 +32,6 @@ public partial class VizaDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder
-            .HasPostgresEnum("estado_pedido", new[] { "pendiente", "en_proceso", "terminado", "entregado" })
-            .HasPostgresEnum("estado_propuesta", new[] { "pendiente", "aprobada", "rechazada" })
-            .HasPostgresEnum("tipo_media", new[] { "imagen", "video" });
-
         modelBuilder.Entity<CategoriaTrabajo>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("categoria_trabajo_pkey");
@@ -127,6 +122,9 @@ public partial class VizaDbContext : DbContext
             entity.ToTable("historial_estado");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(20)
+                .HasColumnName("estado");
             entity.Property(e => e.Fecha)
                 .HasDefaultValueSql("now()")
                 .HasColumnType("timestamp without time zone")
@@ -154,6 +152,9 @@ public partial class VizaDbContext : DbContext
             entity.ToTable("media_trabajo");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Tipo)
+                .HasMaxLength(10)
+                .HasColumnName("tipo");
             entity.Property(e => e.EsPortada)
                 .HasDefaultValue(false)
                 .HasColumnName("es_portada");
@@ -183,6 +184,10 @@ public partial class VizaDbContext : DbContext
             entity.Property(e => e.CategoriaId).HasColumnName("categoria_id");
             entity.Property(e => e.ClienteId).HasColumnName("cliente_id");
             entity.Property(e => e.Descripcion).HasColumnName("descripcion");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(20)
+                .HasDefaultValue("pendiente")
+                .HasColumnName("estado");
             entity.Property(e => e.FechaEntregaEstimada).HasColumnName("fecha_entrega_estimada");
             entity.Property(e => e.FechaEntregaReal).HasColumnName("fecha_entrega_real");
             entity.Property(e => e.FechaRegistro)
@@ -211,6 +216,10 @@ public partial class VizaDbContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.ComentarioCliente).HasColumnName("comentario_cliente");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(20)
+                .HasDefaultValue("pendiente")
+                .HasColumnName("estado");
             entity.Property(e => e.Etiqueta)
                 .HasMaxLength(100)
                 .HasColumnName("etiqueta");

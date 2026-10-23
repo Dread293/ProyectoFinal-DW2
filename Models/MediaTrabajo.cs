@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace backend.Models;
@@ -8,6 +8,8 @@ public partial class MediaTrabajo
     public int Id { get; set; }
 
     public int TrabajoId { get; set; }
+
+    public string Tipo { get; set; } = "imagen";
 
     public string Url { get; set; } = null!;
 

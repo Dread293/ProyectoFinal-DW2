@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace backend.Models;
@@ -8,6 +8,8 @@ public partial class HistorialEstado
     public int Id { get; set; }
 
     public int PedidoId { get; set; }
+
+    public string Estado { get; set; } = null!;
 
     public string? NotaPublica { get; set; }
 

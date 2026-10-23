@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace backend.Models;
@@ -10,6 +10,8 @@ public partial class Pedido
     public int ClienteId { get; set; }
 
     public string? Descripcion { get; set; }
+
+    public string Estado { get; set; } = "pendiente";
 
     public DateTime? FechaRegistro { get; set; }
 
